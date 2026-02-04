@@ -5,7 +5,7 @@
 <h1 align="center">ADHD Focus Mate</h1>
 
 <div align="center">
-  <strong>The ADHD timer that sees your distractions before you get lost in them.</strong><br>
+  <strong>The AI companion that knows what you should be doing and gently reminds you when you get distracted.</strong><br>
   Private. Open Source. AI-Powered.
 </div>
 
