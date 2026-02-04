@@ -123,8 +123,20 @@ Since you use your own API Key, you are in control.
     - **Low Cost**: Even without credits, the app usually costs **<$1/month** to run.
   - **Model Choice**: We recommend using a lightweight, cost-efficient model like **`gemini-2.5-flash-lite`**. The classification task is simple enough that you don't need a more powerful (and expensive) model.
 
-### Quickstart (Pre-built)
-*Coming Soon to Releases*
+### Install via Homebrew (Preferred)
+Install via [Homebrew](https://brew.sh/) to get autoupdates.
+```bash
+brew install --cask skainguyen1412/tap/adhd-focus-mate
+```
+
+### Manual Install
+You can also install manually:
+1. Download the latest available zip from [releases page](https://github.com/skainguyen1412/adhd-focus-timer/releases)
+2. Unpack zip
+3. Put unpacked `ADHD Focus Mate.app` into `/Applications` folder
+
+> [!NOTE]
+> This app is **signed and notarized** by Apple, so you should not see any security warnings when opening it.
 
 ### Build from Source
 1. **Clone the repo**:
