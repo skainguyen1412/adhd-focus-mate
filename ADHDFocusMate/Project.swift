@@ -25,6 +25,7 @@ let project = Project(
                 "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
                 "PRODUCT_NAME": "ADHD Focus Mate",
                 "INFOPLIST_KEY_CFBundleDisplayName": "ADHD Focus Mate",
+                "ENABLE_HARDENED_RUNTIME": "YES",
             ])
         ),
         .target(
