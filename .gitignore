@@ -1,0 +1,19 @@
+# System
+.DS_Store
+
+# Xcode
+*.derivedData
+*.xcuserstate
+xcuserdata/
+DerivedData/
+*.xcworkspace
+!Tuist/Project.swift
+!Tuist/Package.swift
+
+# Tuist
+/Tuist/Dependencies
+/Tuist/Derived
+
+# App Keys & Secrets
+GoogleService-Info.plist
+.agent/skills
