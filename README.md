@@ -22,12 +22,11 @@
 <br>
 
 <p align="center">
-  <a href="#quickstart">Quickstart</a> •
-  <a href="#why-i-built-this">Why I built this</a> •
   <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#why-i-built-this">Why I built this</a> •
   <a href="#how-it-works">How it works</a> •
   <a href="#privacy--data">Privacy & Data</a> •
-  <a href="#installation">Installation</a> •
   <a href="#troubleshooting">Troubleshooting</a>
 </p>
 
@@ -49,18 +48,6 @@ https://github.com/user-attachments/assets/ca3f26c7-788c-4bb5-af6d-0ce3462f3b3d
 
 ---
 
-## Why I built this
-
-I built Focus Mate because whenever I sit down to code, I eventually drift. 
-
-One minute I'm debugging a function, and the next—without even realizing it—I'm scrolling X (Twitter) or watching TikToks. I lose track of time completely. 10 minutes turns into 45, and my flow is dead.
-
-I thought it would be really cool to have an app that actually *knows* what I'm doing. Not just a dumb timer, but something smart enough to track my context and gently remind me if I lose focus.
-
-So I built it. **ADHD Focus Mate** is that intelligent companion—it sees when you're working, notices when you drift, and helps you stay in the zone without being annoying.
-
----
-
 ## Features
 
 - **🧘 Zen Timer**: A beautiful, unobtrusive "Zen Pill" in your menu bar that shows your status at a glance.
@@ -69,47 +56,6 @@ So I built it. **ADHD Focus Mate** is that intelligent companion—it sees when 
 - **🔍 Recognize & Fix Patterns**: It spots your specific distraction triggers (like Twitter or Steam) and analyzes your patterns to help you understand and fix your focus habits.
 - **📅 Session History**: Review a detailed log of your focus sessions to track exactly what you worked on throughout the day.
 - **💸 Wallet Friendly**: Built with a **Token Optimization Philosophy**. We use smart image compression and efficient prompting to keep payload sizes tiny, ensuring costs stay extremely low (often <$1/month) even with all-day usage.
-
-## Roadmap
-
-We have big plans to make Focus Mate the ultimate productivity tool:
-
-- **🔮 Local AI Support**: We are working on supporting **local LLM/VLM models** (like Ollama or CoreML). This will allow the app to run **100% offline**, be **fully private**, and **completely free forever**.
-- **📊 Advanced Insights**: Deeper analytics to help you understand your productivity flow.
-- **⚡️ Shortcuts Integration**: Control Focus Mate with macOS Shortcuts.
-
----
-
-## How it works
-
-The app operates on a simple "Capture → Analyze → Feedback" loop designed to be lightweight and private.
-
-
-
-1. **Capture**: At your chosen interval (1-5 minutes), the app takes a screenshot.
-2. **Analyze**: The image is sent to the Gemini API (`gemini-2.5-flash-lite` by default) along with your personalized focus context.
-3. **Classify**: The AI responds with a classification (e.g., `label: slack`, `category: social_media`).
-4. **Action**:
-   - If **Work**: Increase your Focus Streak. 🎉
-   - If **Slack**: Send a nudge notification + enter "Cooldown Mode" (so it doesn't spam you).
-5. **Privacy**: The screenshot is **immediately deleted** from memory. It rarely exists for more than 2 seconds.
-
----
-
-## Privacy & Data
-
-We believe that anything watching your screen must be **radically transparent**.
-
-### 1. We don't collect your data
-Everything stays on your Mac. Your logs, stats, and history are stored locally using **SwiftData**. We have no servers, so we couldn't steal your data even if we wanted to.
-
-### 2. What leaves your Mac?
-The only data that leaves your computer is the **current screenshot** sent to **Google Gemini** for analysis. It is processed and then immediately forgotten.
-
-### 3. How to stay 100% private
-Since you use your own API Key, you are in control.
-- **Paid Tier (Recommended)**: If you enable billing on your Google Cloud project (even if you stay within free quotas), Google [states](https://ai.google.dev/gemini-api/terms) they **do not train** on your data. This is the best way to ensure privacy.
-- **Free Tier**: If you use the completely free tier, Google *may* use anonymized data to improve their models.
 
 ---
 
@@ -155,6 +101,61 @@ You can also install manually:
    ```
 4. **Run**:
    Open `ADHDFocusMate.xcworkspace`, select the `ADHDFocusMate` scheme, and hit `Cmd+R`.
+
+---
+
+## Why I built this
+
+I built Focus Mate because whenever I sit down to code, I eventually drift. 
+
+One minute I'm debugging a function, and the next—without even realizing it—I'm scrolling X (Twitter) or watching TikToks. I lose track of time completely. 10 minutes turns into 45, and my flow is dead.
+
+I thought it would be really cool to have an app that actually *knows* what I'm doing. Not just a dumb timer, but something smart enough to track my context and gently remind me if I lose focus.
+
+So I built it. **ADHD Focus Mate** is that intelligent companion—it sees when you're working, notices when you drift, and helps you stay in the zone without being annoying.
+
+---
+
+## Roadmap
+
+We have big plans to make Focus Mate the ultimate productivity tool:
+
+- **🔮 Local AI Support**: We are working on supporting **local LLM/VLM models** (like Ollama or CoreML). This will allow the app to run **100% offline**, be **fully private**, and **completely free forever**.
+- **📊 Advanced Insights**: Deeper analytics to help you understand your productivity flow.
+- **⚡️ Shortcuts Integration**: Control Focus Mate with macOS Shortcuts.
+
+---
+
+## How it works
+
+The app operates on a simple "Capture → Analyze → Feedback" loop designed to be lightweight and private.
+
+
+
+1. **Capture**: At your chosen interval (1-5 minutes), the app takes a screenshot.
+2. **Analyze**: The image is sent to the Gemini API (`gemini-2.5-flash-lite` by default) along with your personalized focus context.
+3. **Classify**: The AI responds with a classification (e.g., `label: slack`, `category: social_media`).
+4. **Action**:
+   - If **Work**: Increase your Focus Streak. 🎉
+   - If **Slack**: Send a nudge notification + enter "Cooldown Mode" (so it doesn't spam you).
+5. **Privacy**: The screenshot is **immediately deleted** from memory. It rarely exists for more than 2 seconds.
+
+---
+
+## Privacy & Data
+
+We believe that anything watching your screen must be **radically transparent**.
+
+### 1. We don't collect your data
+Everything stays on your Mac. Your logs, stats, and history are stored locally using **SwiftData**. We have no servers, so we couldn't steal your data even if we wanted to.
+
+### 2. What leaves your Mac?
+The only data that leaves your computer is the **current screenshot** sent to **Google Gemini** for analysis. It is processed and then immediately forgotten.
+
+### 3. How to stay 100% private
+Since you use your own API Key, you are in control.
+- **Paid Tier (Recommended)**: If you enable billing on your Google Cloud project (even if you stay within free quotas), Google [states](https://ai.google.dev/gemini-api/terms) they **do not train** on your data. This is the best way to ensure privacy.
+- **Free Tier**: If you use the completely free tier, Google *may* use anonymized data to improve their models.
 
 ---
 
