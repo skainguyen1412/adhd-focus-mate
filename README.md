@@ -131,7 +131,7 @@ brew install --cask skainguyen1412/tap/adhd-focus-mate
 
 ### Manual Install
 You can also install manually:
-1. Download the latest available zip from [releases page](https://github.com/skainguyen1412/adhd-focus-timer/releases)
+1. Download the latest available zip from [releases page](https://github.com/skainguyen1412/adhd-focus-mate/releases)
 2. Unpack zip
 3. Put unpacked `ADHD Focus Mate.app` into `/Applications` folder
 
@@ -141,8 +141,8 @@ You can also install manually:
 ### Build from Source
 1. **Clone the repo**:
    ```bash
-   git clone https://github.com/skainguyen1412/adhd-focus-timer.git
-   cd adhd-focus-timer
+   git clone https://github.com/skainguyen1412/adhd-focus-mate.git
+   cd adhd-focus-mate
    ```
 2. **Install Tuist**:
    ```bash
