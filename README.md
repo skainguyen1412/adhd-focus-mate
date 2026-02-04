@@ -45,9 +45,7 @@ Unlike traditional timers that just count down, **Focus Mate uses AI to understa
 
 ## See it in Action
 
-<div align="center">
-  <video src="media/focus.mp4" width="100%" controls autoplay loop muted></video>
-</div>
+https://github.com/user-attachments/assets/ca3f26c7-788c-4bb5-af6d-0ce3462f3b3d
 
 ---
 
