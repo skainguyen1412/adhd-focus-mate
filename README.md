@@ -131,8 +131,8 @@ Since you use your own API Key, you are in control.
 ### Build from Source
 1. **Clone the repo**:
    ```bash
-   git clone https://github.com/skainguyen1412/adhd-timer-ai.git
-   cd adhd-timer-ai
+   git clone https://github.com/skainguyen1412/adhd-focus-timer.git
+   cd adhd-focus-timer
    ```
 2. **Install Tuist**:
    ```bash
