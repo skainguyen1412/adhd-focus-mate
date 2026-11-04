@@ -103,10 +103,10 @@ struct SettingsView: View {
                                             set: { appSettings.geminiModel = $0 }
                                         )
                                     ) {
-                                        Text("Gemini 2.5 Flash Lite (Recommended)").tag(
-                                            "gemini-2.5-flash-lite")
-                                        Text("Gemini 2.5 Flash").tag(
-                                            "gemini-2.5-flash")
+                                        Text("Gemini 3.5 Flash Lite (Recommended)").tag(
+                                            "gemini-3.5-flash-lite")
+                                        Text("Gemini 3.5 Flash").tag(
+                                            "gemini-3.5-flash")
                                         Text("Gemini 3.0 Flash Preview").tag(
                                             "gemini-3-flash-preview")
                                         Text("Gemini 3.0 Pro Preview").tag(

@@ -10,7 +10,7 @@ public actor GeminiService {
 
     /// Validates the API key by making a minimal request
     public func validateKey(
-        _ apiKey: String, model: String = "gemini-2.5-flash-lite", apiProvider: String = "aiStudio"
+        _ apiKey: String, model: String = "gemini-3.5-flash-lite", apiProvider: String = "aiStudio"
     ) async throws
         -> Bool
     {
@@ -96,7 +96,7 @@ public actor GeminiService {
 
     /// Classifies an image data using the Gemini API
     public func classify(
-        imageData: Data, apiKey: String, model: String = "gemini-2.5-flash-lite",
+        imageData: Data, apiKey: String, model: String = "gemini-3.5-flash-lite",
         apiProvider: String = "aiStudio", systemPrompt: String
     ) async throws
         -> String
@@ -230,7 +230,7 @@ public actor GeminiService {
 
     /// Generates content from a text prompt using the Gemini API
     public func generateContent(
-        prompt: String, apiKey: String, model: String = "gemini-2.5-flash-lite",
+        prompt: String, apiKey: String, model: String = "gemini-3.5-flash-lite",
         apiProvider: String = "aiStudio",
         systemPrompt: String? = nil
     ) async throws -> String {

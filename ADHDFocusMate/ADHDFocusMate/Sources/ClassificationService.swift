@@ -157,7 +157,7 @@ public actor ClassificationService: ClassificationServiceProtocol {
         let service = GeminiService()
 
         // Use provided model or fallback
-        let modelUnderTest = model ?? "gemini-2.5-flash-lite"
+        let modelUnderTest = model ?? "gemini-3.5-flash-lite"
         let providerUnderTest = apiProvider ?? "aiStudio"
 
         var prompt = makeSystemPrompt(

@@ -16,7 +16,7 @@ public class AppSettings {
     public init(
         intervalSeconds: Int = 180,
         slackNudgesEnabled: Bool = true,
-        geminiModel: String = "gemini-2.5-flash-lite",
+        geminiModel: String = "gemini-3.5-flash-lite",
         geminiApiKey: String? = nil,
         apiProvider: String = "aiStudio",
         isKeyValidated: Bool = false,
